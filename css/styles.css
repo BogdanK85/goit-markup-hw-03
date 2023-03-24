@@ -316,19 +316,41 @@ body {
 }
 
 /* ======= Portfolio ======= */
-
-.filter-item-btn.filter-item {
+.top-filter.section {
+    padding-top: 96px;
+}
+.filter-item-btn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 12px 24px;
+    border: solid 1px var(--cornflower-color);
+    border-radius: 4px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
-
-}
-.filter-item {
-    color: var(--iris-color);
     background: var(--cloud-color);
+    color: var(--iris-color);
+}
+.filter-item:nth-child(5n) {
+    margin-right: 0;
+}
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.filter-item {
+    margin-right: 24px;
+}
+.filter-item:nth-last-child(-n+5) {
+    margin-bottom: 0;
 }
 
 .filter-item .filter-item:hover,
@@ -339,8 +361,6 @@ body {
 }
 
 
-.filter-btn:hover,
-.filter-btn:focus,
 
 .filter-projects-list {
     display: flex;
@@ -358,7 +378,6 @@ body {
     width: 360px;
     height: 420px;
     background-color: var(--white-color);
-    border: 1px solid var(--cornflower-color);
 }
 .project-title {
     margin-bottom: 8px;
@@ -377,6 +396,9 @@ body {
     margin-bottom: 32px;
     margin-left: 16px;
     color: var(--slate-color);
+}
+.project {
+    padding: 32px auto 16;
 }
 .footer {
     background-color: var(--navy-blue-color);
