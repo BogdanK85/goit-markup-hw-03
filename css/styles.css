@@ -39,6 +39,8 @@ address {
 }
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body {
@@ -61,7 +63,7 @@ body {
 .link {
     text-decoration: none;
 }
-.conteiner {
+.container {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0px 15px;
@@ -69,6 +71,7 @@ body {
 .main-header {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--cornflower-color);
 }
 .page-nav {
     display: flex;
@@ -165,7 +168,7 @@ body {
 .section {
     padding: 120px 0px;
 }
-.hero .conteiner {
+.hero .container {
     text-align: center;
 }
 .main-title {
@@ -360,7 +363,8 @@ body {
     cursor: pointer;
 }
 
-
+.filter-btn:hover,
+.filter-btn:focus,
 
 .filter-projects-list {
     display: flex;
@@ -381,9 +385,6 @@ body {
 }
 .project-title {
     margin-bottom: 8px;
-    margin-top: 32px;
-    margin-left: 16px;
-    margin-right: 54px;
     width: 290px;
         font-weight: 500;
         font-size: 20px;
@@ -393,12 +394,13 @@ body {
 }
 
 .project-title-item {
-    margin-bottom: 32px;
-    margin-left: 16px;
     color: var(--slate-color);
 }
 .project {
-    padding: 32px auto 16;
+    padding: 32px 54px 32px 16px;
+    border-bottom: 1px solid var(--cornflower-color);
+    border-right: 1px solid var(--cornflower-color);
+    border-left: 1px solid var(--cornflower-color);
 }
 .footer {
     background-color: var(--navy-blue-color);
