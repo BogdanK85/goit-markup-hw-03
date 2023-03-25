@@ -68,10 +68,12 @@ body {
     margin: 0 auto;
     padding: 0px 15px;
 }
+.page-header {
+    border-bottom: 1px solid var(--cornflower-color);
+}
 .main-header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--cornflower-color);
 }
 .page-nav {
     display: flex;
@@ -147,8 +149,9 @@ body {
     color: var(--slate-color);
 }
 .contact.link {
+    padding: 24px 0;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -307,6 +310,8 @@ body {
 }
 /* ======= Footer ======= */
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--white-color);
 }
 
@@ -356,15 +361,15 @@ body {
     margin-bottom: 0;
 }
 
-.filter-item .filter-item:hover,
-.filter-item .filter-item:focus {
+.filter-item-btn:hover,
+.filter-item-btn:focus {
     color: var(--white-color);
     background-color: var(--ocean-color);
     cursor: pointer;
 }
 
-.filter-btn:hover,
-.filter-btn:focus,
+.filter-item:hover,
+.filter-item:focus,
 
 .filter-projects-list {
     display: flex;
